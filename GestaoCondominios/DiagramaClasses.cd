@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="GestaoCondominios.Controllers.CondominioController" Collapsed="true">
-    <Position X="10" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAACAAAAAAAAAAAAgAAAAQAAAAAIAAA=</HashCode>
-      <FileName>Controllers\CondominioController.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="GestaoCondominios.Models.Condominio" Collapsed="true">
     <Position X="8.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
@@ -54,6 +47,13 @@
     <TypeIdentifier>
       <HashCode>AACAAAAAgAAEAAAEAAAAAAAEAAAABAAAAAAEAAAAAAA=</HashCode>
       <FileName>Models\Quota.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoCondominios.Controllers.CondominioController" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAACAAAAAAAAAAAAgAAAAQAAAAAIAAA=</HashCode>
+      <FileName>Controllers\CondominioController.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="GestaoCondominios.Interfaces.ICondominioView" Collapsed="true">

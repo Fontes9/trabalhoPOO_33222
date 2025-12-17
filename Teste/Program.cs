@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+* <copyright file="Program.cs" company="IPCA">
+* Copyright (c) 2025 All Rights Reserved
+* </copyright>
+* <author>Tiago Barroso Fontes (33222)</author>
+* <description>Ponto de entrada da aplicação.</description>
+*/
+using System;
 using GestaoCondominios.Models;
 using GestaoCondominios.Views;
 using GestaoCondominios.Controllers;
@@ -14,10 +21,10 @@ namespace GestaoCondominios
             Console.Clear();
             Console.WriteLine("=== A INICIAR SISTEMA ===");
 
-            // 1. Tentar Carregar dados
+            // 1. Tentar Carregar dados existentes
             Condominio predio = FicheiroService.CarregarDados();
 
-            // 2. Se não existir ficheiro, cria dados de teste
+            // 2. Se não existirem dados (primeira vez), cria dados de teste
             if (predio == null)
             {
                 Console.WriteLine("-> Nenhum ficheiro encontrado. A criar dados novos...");
@@ -30,7 +37,7 @@ namespace GestaoCondominios
                 predio.AdicionarFracao(new Fracao("B", 500, p2));
             }
 
-            // 3. Iniciar MVC
+            // 3. Setup do MVC
             ICondominioView view = new ConsoleView();
             CondominioController app = new CondominioController(predio, view);
 

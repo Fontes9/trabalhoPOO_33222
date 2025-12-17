@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+* <copyright file="Fracao.cs" company="IPCA">
+* Copyright (c) 2025 All Rights Reserved
+* </copyright>
+* <author>Tiago Barroso Fontes (33222)</author>
+* <description>Representa uma fração do condomínio.</description>
+*/
+using System;
 using System.Collections.Generic;
 
 namespace GestaoCondominios.Models

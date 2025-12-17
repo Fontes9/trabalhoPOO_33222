@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+* <copyright file="Condominio.cs" company="IPCA">
+* Copyright (c) 2025 All Rights Reserved
+* </copyright>
+* <author>Tiago Barroso Fontes (33222)</author>
+* <description>Gestor de um condomínio.</description>
+*/
+using System;
 using System.Collections.Generic;
 
 namespace GestaoCondominios.Models

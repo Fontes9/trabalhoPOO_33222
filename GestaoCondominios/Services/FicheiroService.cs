@@ -1,18 +1,30 @@
-﻿using System;
+﻿/*
+* <copyright file="FicheiroService.cs" company="IPCA">
+* Copyright (c) 2025 All Rights Reserved
+* </copyright>
+* <author>Tiago Barroso Fontes (33222)</author>
+* <description>Serviço de persistência de dados em ficheiro.</description>
+*/
+using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using GestaoCondominios.Models;
 
 namespace GestaoCondominios.Services
 {
+    /// <summary>
+    /// Serviço responsável pela persistência de dados em ficheiro (I/O).
+    /// Utiliza serialização binária para guardar o estado do objeto Condominio.
+    /// </summary>
     public class FicheiroService
     {
-        // O ficheiro ficará na pasta bin/Debug/net8.0
+        // Define o nome do ficheiro binário a ser guardado na pasta de execução
         private const string NOME_FICHEIRO = "dados_condominio.bin";
 
         /// <summary>
-        /// Guarda os dados em disco (Binário).
+        /// Serializa e guarda o objeto Condominio no disco.
         /// </summary>
+        /// <param name="condominio">Objeto principal contendo todos os dados.</param>
         public static void GuardarDados(Condominio condominio)
         {
             try
@@ -31,8 +43,9 @@ namespace GestaoCondominios.Services
         }
 
         /// <summary>
-        /// Carrega os dados do disco.
+        /// Tenta ler e desserializar os dados do disco.
         /// </summary>
+        /// <returns>Objeto Condominio recuperado ou null se o ficheiro não existir/falhar.</returns>
         public static Condominio CarregarDados()
         {
             if (!File.Exists(NOME_FICHEIRO))
