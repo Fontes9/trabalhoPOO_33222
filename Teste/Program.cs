@@ -14,13 +14,13 @@ namespace GestaoCondominios
             Console.Clear();
             Console.WriteLine("=== A INICIAR SISTEMA ===");
 
-            // 1. Tentar Carregar dados existentes
+            // 1. Tentar Carregar dados
             Condominio predio = FicheiroService.CarregarDados();
 
-            // 2. Se não existirem dados (primeira vez), cria dados de teste
+            // 2. Se não existir ficheiro, cria dados de teste
             if (predio == null)
             {
-                Console.WriteLine("-> A criar dados de demonstração...");
+                Console.WriteLine("-> Nenhum ficheiro encontrado. A criar dados novos...");
                 predio = new Condominio("Edifício Panorâmico");
 
                 Proprietario p1 = new Proprietario("Ana", "123456789", "910000000");
@@ -30,25 +30,21 @@ namespace GestaoCondominios
                 predio.AdicionarFracao(new Fracao("B", 500, p2));
             }
 
-            // 3. Setup do MVC
+            // 3. Iniciar MVC
             ICondominioView view = new ConsoleView();
             CondominioController app = new CondominioController(predio, view);
 
-            // === PAUSA PARA LER AS MENSAGENS INICIAIS ===
-            Console.WriteLine("\n[DEBUG] Dados prontos. Pressiona qualquer tecla para abrir o menu...");
+            Console.WriteLine("\n[SISTEMA] Pressiona qualquer tecla para abrir o menu...");
             Console.ReadKey();
-            // ============================================
 
-            // 4. Iniciar a aplicação (Loop do Menu)
+            // 4. Executar Aplicação
             app.Iniciar();
 
-            // 5. Guardar automaticamente ao sair
-            Console.WriteLine("\n=== A ENCERRAR SISTEMA ===");
-            Console.WriteLine("A guardar dados...");
+            // 5. Guardar ao Sair (Backup de segurança)
+            Console.WriteLine("\n=== A SAIR ===");
             FicheiroService.GuardarDados(predio);
 
-            // === PAUSA FINAL ===
-            Console.WriteLine("\nPressiona Enter para fechar a janela.");
+            Console.WriteLine("Pressiona Enter para fechar.");
             Console.ReadLine();
         }
     }

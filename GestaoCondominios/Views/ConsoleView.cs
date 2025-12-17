@@ -1,8 +1,4 @@
-﻿/*
-* <copyright file="ConsoleView.cs" company="IPCA">
-* <description>Implementação da View em Consola.</description>
-*/
-using System;
+﻿using System;
 using GestaoCondominios.Interfaces;
 using GestaoCondominios.Models;
 
@@ -37,6 +33,7 @@ namespace GestaoCondominios.Views
             Console.WriteLine("1. Lançar Despesa");
             Console.WriteLine("2. Relatório Financeiro");
             Console.WriteLine("3. Pagar Quota");
+            Console.WriteLine("4. Guardar Dados"); // <--- NOVA LINHA
             Console.WriteLine("0. Sair");
             Console.Write("Opção: ");
 
