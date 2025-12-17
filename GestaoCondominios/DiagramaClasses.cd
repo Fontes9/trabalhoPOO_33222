@@ -1,53 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="GestaoCondominios.Condominio">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+  <Class Name="GestaoCondominios.Controllers.CondominioController" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAKAAAAAAAAAgAAAAgAAAAAAAAAAgAAAAIAAgAAAwI=</HashCode>
-      <FileName>Condominio.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAACAAAAAAAAAAAAgAAAAQAAAAAIAAA=</HashCode>
+      <FileName>Controllers\CondominioController.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GestaoCondominios.Condomino">
-    <Position X="2.25" Y="0.75" Width="1.5" />
+  <Class Name="GestaoCondominios.Models.Condominio" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECCQAAAAEAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\Condominio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoCondominios.Models.Despesa" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAQAAAAAEAAAABAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Models\Despesa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoCondominios.Models.Fracao" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAQAAAAECAQAAAgEAAAAAgAAAAIAA=</HashCode>
+      <FileName>Models\Fracao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoCondominios.Models.Inquilino" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Inquilino.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoCondominios.Models.Pessoa" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAACAAAAEgAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoCondominios.Models.Proprietario" Collapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
-      <FileName>Condomino.cs</FileName>
+      <FileName>Models\Proprietario.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GestaoCondominios.Fracao">
-    <Position X="10.75" Y="0.5" Width="1.5" />
+  <Class Name="GestaoCondominios.Models.Quota" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAQBAAAECAQAAAgEAAAAAAAAAAAAA=</HashCode>
-      <FileName>Fracao.cs</FileName>
+      <HashCode>AACAAAAAgAAEAAAEAAAAAAAEAAAABAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Models\Quota.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GestaoCondominios.GestaoCondominios">
-    <Position X="6.75" Y="0.5" Width="1.5" />
+  <Interface Name="GestaoCondominios.Interfaces.ICondominioView" Collapsed="true">
+    <Position X="8" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAgIAAAAAoAAAAAAAAAAAAAABAACAAIAAgAAAAA=</HashCode>
-      <FileName>GestaoCondominios.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAEAAAACAAAAAAAAAAACAAAABACAAAAA=</HashCode>
+      <FileName>Interfaces\ICondominioView.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="GestaoCondominios.Inquilino">
-    <Position X="0.5" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Inquilino.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="GestaoCondominios.Pessoa">
-    <Position X="2.25" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AQAAAAAAAACAAAAEgAAAAAAAAAAAAIAAAAAAAAEAAAA=</HashCode>
-      <FileName>Pessoa.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="GestaoCondominios.Proprietario">
-    <Position X="4.25" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Proprietario.cs</FileName>
-    </TypeIdentifier>
-  </Class>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

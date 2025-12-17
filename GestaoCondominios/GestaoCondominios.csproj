@@ -41,17 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Condominio.cs" />
-    <Compile Include="Condomino.cs" />
-    <Compile Include="Fracao.cs" />
-    <Compile Include="GestaoCondominios.cs" />
-    <Compile Include="Inquilino.cs" />
-    <Compile Include="Pessoa.cs" />
+    <Compile Include="Controllers\CondominioController.cs" />
+    <Compile Include="Interfaces\ICondominioView.cs" />
+    <Compile Include="Models\Condominio.cs" />
+    <Compile Include="Models\Despesa.cs" />
+    <Compile Include="Models\Fracao.cs" />
+    <Compile Include="Models\Inquilino.cs" />
+    <Compile Include="Models\Pessoa.cs" />
+    <Compile Include="Models\Proprietario.cs" />
+    <Compile Include="Models\Quota.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Proprietario.cs" />
+    <Compile Include="Views\ConsoleView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DiagramaClasses.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
