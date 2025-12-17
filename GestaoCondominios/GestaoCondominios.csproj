@@ -51,6 +51,7 @@
     <Compile Include="Models\Proprietario.cs" />
     <Compile Include="Models\Quota.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FicheiroService.cs" />
     <Compile Include="Views\ConsoleView.cs" />
   </ItemGroup>
   <ItemGroup>
