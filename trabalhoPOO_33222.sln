@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36623.8 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoCondominios", "GestaoCondominios\GestaoCondominios.csproj", "{A680D7EF-974C-48DF-A9AB-E8C90CB7DEF7}"
 EndProject
@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste", "Teste\Teste.csproj
 	ProjectSection(ProjectDependencies) = postProject
 		{A680D7EF-974C-48DF-A9AB-E8C90CB7DEF7} = {A680D7EF-974C-48DF-A9AB-E8C90CB7DEF7}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoCondominios.Tests", "GestaoCondominios.Tests\GestaoCondominios.Tests.csproj", "{3D7DC7CF-730B-475F-B721-0941DB606FC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{FC899BD0-1E18-47F8-BADE-F094A0765017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC899BD0-1E18-47F8-BADE-F094A0765017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC899BD0-1E18-47F8-BADE-F094A0765017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7DC7CF-730B-475F-B721-0941DB606FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7DC7CF-730B-475F-B721-0941DB606FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7DC7CF-730B-475F-B721-0941DB606FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7DC7CF-730B-475F-B721-0941DB606FC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
