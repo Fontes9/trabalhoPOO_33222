@@ -9,11 +9,3 @@
 | 33222   | Tiago Barroso Fontes|
 
 ---
-
-## Em Falta
-
-- [ ] **Tratamento de Exceções Customizadas**
-- [ ] **Testes Unitários**
-- [ ] **Logs**
-
----
